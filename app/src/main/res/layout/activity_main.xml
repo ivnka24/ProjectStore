@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<androidx.appcompat.widget.Toolbar
+    android:background="@color/Orange"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toko Sepatu"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:textColor="@color/white"
+            />
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_cari"
+            android:text="Search"
+            android:textAllCaps="false"/>
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <androidx.cardview.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardCornerRadius="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="37dp"
+            android:layout_height="37dp">
+            <Button
+                android:layout_gravity="center"
+                android:background="@drawable/ic_favorit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>
+</LinearLayout>
